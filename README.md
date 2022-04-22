@@ -5,11 +5,11 @@ This small repo describes how to generate iris-like data, based on a Gaussian Mi
 
 The idea is to be able to generate many samples similar to iris data, as such dataset is reduced (150 data points). 
 
-Here below shows the comparison of the original Iris dataset ('x', '*', and '+' symbols) with the generated samples, based on a Bayesian Gaussian Mixture Model probability distribution function [using the scikit-learn implementation](https://scikit-learn.org/stable/modules/generated/sklearn.mixture.BayesianGaussianMixture.html#sklearn.mixture.BayesianGaussianMixture). 
+Here below shows the comparison of the original Iris dataset ('x', '*', and '+' symbols) with the generated samples, based on a Variational Bayesian Gaussian Mixture Model probability distribution function [using the scikit-learn implementation](https://scikit-learn.org/stable/modules/generated/sklearn.mixture.BayesianGaussianMixture.html#sklearn.mixture.BayesianGaussianMixture). 
 
 ![Iris generated](images/iris_generated.png "Iris generated")
 
-As stated in the [Scikit-Learn documentation](https://scikit-learn.org/stable/modules/generated/sklearn.mixture.BayesianGaussianMixture.html#sklearn.mixture.BayesianGaussianMixture), the Bayesian Gaussian Mixture Model is particularly well adapted to mimic *blob-like*, *multi-dimensional*, distributions. The variational Bayesian algorithm which fits the GMM probability distribution function allows to optimize the number of gaussian components needed (in contrast, [in the classical, non-variational GMM](https://scikit-learn.org/stable/modules/generated/sklearn.mixture.GaussianMixture.html#sklearn.mixture.GaussianMixture), one has to input the number of such components).
+As stated in the [Scikit-Learn documentation, the Variational Bayesian Gaussian Mixture Model](https://scikit-learn.org/stable/modules/generated/sklearn.mixture.BayesianGaussianMixture.html#sklearn.mixture.BayesianGaussianMixture) is particularly well adapted to mimic *blob-like*, *multi-dimensional*, distributions (although stated that the multi-dimensionality is expected to be rather low, probably below 10-20 dimensions). The variational Bayesian algorithm which fits the GMM probability distribution function allows to optimize the number of gaussian components needed (in contrast, [in the classical, non-variational GMM](https://scikit-learn.org/stable/modules/generated/sklearn.mixture.GaussianMixture.html#sklearn.mixture.GaussianMixture), one has to input the number of such components).
 
 ## How to use
 
