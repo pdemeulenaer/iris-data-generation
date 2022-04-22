@@ -7,4 +7,4 @@ Here shows the comparison of the original Iris dataset ('x', '*', and '+' symbol
 
 ![Iris generated](images/iris_generated.png "Iris generated")
 
-
+The view is created in notebook `explore.ipynb`, using a data generation function available in the `module.py` file. 
